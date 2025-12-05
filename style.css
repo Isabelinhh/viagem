@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #f2ffff;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* ======== CABEÇALHO ======== */
+header {
+    background: linear-gradient(180deg, #ffffff, #E2DBE0);
+    padding: 20px 10px;
+    color: rgb(255, 255, 255);
+}
+
+header img {
+    width: 120px;
+    border-radius: 10px;
+}
+
+header p {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* ======== MENU DE NAVEGAÇÃO ======== */
+nav {
+    background-color:#E2DBE0;
+    padding: 10px 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(68, 50, 145);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #000000;
+    
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.flex-container {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 40px;
+    background-color: rgb(85, 36, 126);
+    align-items: center;
+}
+
+.btn-orange {
+  --bg-start: #bc6bff;
+  --bg-end:   #bb553577;
+  --shadow:   0 6px 18px rgba(255,122,0,0.18);
+  width: 30dvh;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(180deg, var(--bg-start), var(--bg-end));
+  border: none;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform .14s ease, box-shadow .14s ease, opacity .14s ease;
+  user-select: none;
+  line-height: 1;
+  -webkit-tap-highlight-color: transparent;
+  
+}
+
+.btn-orange .btn-icon { 
+  fill: currentColor; 
+  opacity: 0.95;
+}
+
+/* Hover / focus / active */
+.btn-orange:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(255,122,0,0.22); }
+.btn-orange:active { transform: translateY(-1px); box-shadow: 0 6px 14px rgba(0,0,0,0.12); }
+.btn-orange:focus { outline: none; box-shadow: 0 0 0 4px rgba(255,154,51,0.22); }
+
+/* Estado desabilitado */
+.btn-orange[disabled],
+.btn-orange:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Links brancos e iluminados */
+a, a:visited {
+  color: #fff;
+  text-shadow: 0 0 8px #fff, 0 0 16px #b2a1f0;
+  transition: text-shadow 0.2s, color 0.2s;
+}
+
