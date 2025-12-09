@@ -76,22 +76,22 @@
             
             const planoSelecionado = document.querySelector('input[name="plano"]:checked')?.value || "Não informado";
 
-            const dados = {
-                nome: document.getElementById('nome').value,
-                email: document.getElementById('email').value,
-                telefone: document.getElementById('telefone').value,
-                nascimento: document.getElementById('dt-nasc').value,
-                peso: document.getElementById('peso').value,
-                altura: document.getElementById('altura').value,
-                foto: nomeArquivoFoto, // Salvando o nome do arquivo
-                plano: planoSelecionado,
-                dias: diasChecados || "Nenhum selecionado",
-                objetivo: document.getElementById('objetivo').value,
-                obs: document.getElementById('informacoes').value || "Nenhuma"
-            };
+            // const dados = {
+            //     nome: document.getElementById('nome').value,
+            //     email: document.getElementById('email').value,
+            //     telefone: document.getElementById('telefone').value,
+            //     nascimento: document.getElementById('dt-nasc').value,
+            //     peso: document.getElementById('peso').value,
+            //     altura: document.getElementById('altura').value,
+            //     foto: nomeArquivoFoto, // Salvando o nome do arquivo
+            //     plano: planoSelecionado,
+            //     dias: diasChecados || "Nenhum selecionado",
+            //     objetivo: document.getElementById('objetivo').value,
+            //     obs: document.getElementById('informacoes').value || "Nenhuma"
+            // };
 
-            localStorage.setItem('dadosBitelo', JSON.stringify(dados));
-            window.location.href = 'relatorio.html';
+            // localStorage.setItem('dadosBitelo', JSON.stringify(dados));
+            window.location.href = 'enviado.html';
         });
     </script>
 </body>
